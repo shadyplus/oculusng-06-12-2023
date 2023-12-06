@@ -1,0 +1,195 @@
+.offer {
+  background-color: #108cad;
+  background-image: url("../images/offer-bckg.webp");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+
+.offer__wrapper {
+  display: flex;
+}
+
+.offer-image {
+  width: 35%;
+}
+
+.offer-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.offer-form h2 {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.offer-form h2 span {
+  color: red;
+  font-style: italic;
+}
+
+.offer-form .prices {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+}
+
+.offer-form .old-price {
+  color: #333;
+  font-size: 29px;
+}
+
+.offer-form .new-price {
+  text-decoration: none;
+  color: red;
+  font-size: 35px;
+}
+
+.offer-horiz-form {
+  width: 85%;
+  margin-top: 15px;
+  padding: 40px 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.offer-horiz-form input {
+  max-width: 33%;
+  margin-bottom: 0;
+}
+
+.offer-horiz-form button {
+  width: 100%;
+  background-color: red;
+  max-width: 240px;
+}
+
+.offer-horiz-form button:hover {
+  background: #ea5b0c;
+  color: var(--form-blue-color);
+}
+
+.sub-form-text {
+  font-size: 16px;
+  color: #fff;
+  margin-top: 50px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .offer-horiz-form {
+    width: 90%;
+    gap: 20px 10px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .offer-horiz-form input {
+    max-width: 49%;
+  }
+
+  .offer__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .offer-image {
+    width: 40%;
+    max-height: 267px;
+  }
+
+  .sub-form-text {
+    margin-top: 30px;
+  }
+
+  .offer {
+    padding-bottom: 50px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .offer__wrapper {
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .offer-image {
+    width: 100%;
+    margin-top: -15px;
+    margin-left: 20px;
+    margin-bottom: 35px;
+  }
+
+  .offer-form h2 {
+    font-size: 24px;
+    text-align: center;
+    line-height: 26px;
+  }
+
+  .offer-form .prices {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .offer-form .old-price,
+  .offer-form .new-price {
+    font-size: 28px;
+  }
+
+  .sub-form-text {
+    margin-top: 30px;
+  }
+
+  .offer {
+    padding-bottom: 50px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .offer-horiz-form {
+    width: 100%;
+    gap: 20px 10px;
+    padding: 30px 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .offer-horiz-form input {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 1024px) {
+  .offer-horiz-form {
+    width: 100%;
+    gap: 20px 10px;
+    padding: 30px 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .offer-horiz-form input {
+    max-width: 48%;
+  }
+
+  .offer-form h2 {
+    font-size: 23px;
+  }
+
+  .offer-image {
+    width: 65%;
+    margin-bottom: 30px;
+  }
+}

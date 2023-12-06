@@ -1,0 +1,77 @@
+.potencial {
+  background-color: #fff;
+}
+
+.potencial-info {
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  align-items: baseline;
+  color: #7a7a7a;
+}
+
+.about-us-info {
+  color: #7a7a7a;
+  padding-bottom: 30px;
+}
+
+.potencial-info__desc h2,
+.about-us-info h2 {
+  margin-bottom: 15px;
+}
+
+.potencial-info h3,
+.potencial-info span,
+.about-us-info h3,
+.about-us-info span {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.potencial-info h3,
+.about-us-info h3 {
+  margin-bottom: 5px;
+}
+
+.potencial-info p,
+.about-us-info p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: justify;
+  line-height: 23px;
+}
+
+.potencial-info p:last-child,
+.about-us-info p::last-child {
+  margin-bottom: 0;
+}
+
+.potencial-info__address p {
+  margin-bottom: 5px;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .potencial-info__desc h2,
+  .about-us-info h2 {
+    font-size: 38px;
+    line-height: 38px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .potencial-info__email {
+    text-align: left;
+  }
+
+  .potencial-info__address p {
+    margin-bottom: 15px;
+  }
+
+  .potencial-info__desc h2,
+  .about-us-info h2 {
+    font-size: 34px;
+    line-height: 32px;
+  }
+}

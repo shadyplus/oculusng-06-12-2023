@@ -1,0 +1,134 @@
+.facts {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #d9e0ea;
+}
+
+.facts__wrapper {
+  max-width: 1240px;
+}
+
+.facts h2 {
+  color: #ff4600;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 35px;
+}
+
+.facts p {
+  line-height: 24px;
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.facts-count {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0 35px;
+}
+
+.facts-count h3 {
+  font-size: 70px;
+  color: #4e4e4e;
+  font-weight: 600;
+}
+
+.facts-count p {
+  font-size: 19px;
+  font-weight: 400;
+  color: #4e4e4e;
+}
+
+.percents {
+  width: 100%;
+  margin-top: 60px;
+}
+
+.rating-center {
+  position: relative;
+}
+
+.percent-column {
+  background: #f7c700;
+  border-top: 7px solid #707480;
+  height: 350px;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.percent-column__inner {
+  position: absolute;
+  left: 33%;
+  top: 0;
+  font-weight: 600;
+  font-size: 30px;
+  font-family: "Poppins";
+}
+
+.rating-center:nth-child(3) .percent-column {
+  height: 320px;
+  margin-top: 29px;
+}
+
+.rating-center:nth-child(4) .percent-column {
+  height: 260px;
+  margin-top: 90px;
+}
+
+.rating-center:nth-child(5) .percent-column {
+  height: 320px;
+  margin-top: 29px;
+}
+
+.rating-center p {
+  margin-top: 0.5em;
+  padding: 0.25em;
+  font-family: "Poppins";
+  font-size: 16px;
+  text-align: center;
+}
+
+@media (min-width: 320px) and (max-width: 992px) {
+  .percent-column {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 0;
+  }
+
+  .rating-center {
+    margin-bottom: 25px;
+  }
+
+  .rating-center p {
+    margin-top: 0;
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  .percent-column__inner {
+    left: unset;
+    right: 25px;
+  }
+
+  .rating-center:nth-child(3) .percent-column,
+  .rating-center:nth-child(4) .percent-column,
+  .rating-center:nth-child(5) .percent-column {
+    margin-left: 0;
+    height: 50px;
+    margin-top: 0;
+  }
+
+  .rating-center:nth-child(3) .percent-column,
+  .rating-center:nth-child(5) .percent-column {
+    width: 92%;
+  }
+
+  .rating-center:nth-child(4) .percent-column {
+    width: 74%;
+  }
+}

@@ -1,0 +1,51 @@
+.values {
+  background-image: url("../images/intro-bckg.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.values__wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  align-items: center;
+}
+
+.values-text {
+  text-align: center;
+}
+
+.values-text h1 {
+  margin-top: 0;
+  font-weight: 900;
+}
+
+.values-text .matcha-link {
+  max-width: 365px;
+  width: 100%;
+  padding: 15px 30px;
+}
+
+.blog .matcha-link {
+  margin-top: 0;
+}
+
+.blog-image {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto 20px;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .values__wrapper,
+  .potencial-info {
+    flex-wrap: wrap;
+  }
+
+  .values-text .matcha-link {
+    margin: 15px auto 25px;
+  }
+}

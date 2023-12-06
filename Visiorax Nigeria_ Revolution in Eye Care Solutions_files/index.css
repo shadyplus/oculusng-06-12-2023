@@ -1,0 +1,20 @@
+@import "./normalize.css";
+@import "./common.css";
+@import "./header.css";
+@import "./intro.css";
+@import "./text-sections.css";
+@import "./slider.css";
+@import "./composition.css";
+@import "./offer.css";
+@import "./facts.css";
+@import "./sertificates.css";
+@import "./work.css";
+@import "./overview.css";
+@import "./feedback.css";
+@import "./faq.css";
+@import "./footer.css";
+
+/* OTHER PAGES*/
+@import "./values.css";
+@import "./potencial.css";
+@import "./team.css";

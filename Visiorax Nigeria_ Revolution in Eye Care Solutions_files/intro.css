@@ -1,0 +1,371 @@
+* {
+  font-family: sans-serif !important;
+}
+a {
+  color: white !important;
+}
+h2 {
+  color: orange !important;
+}
+.intro {
+    background-image: url("../images/intro-bckg.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .intro__wrapper {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    width: 100%;
+  }
+  
+  .intro__desc {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px 0;
+  }
+  
+  h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333333;
+    margin-top: 40px;
+  }
+  
+  h1 span {
+    color: #ff0000;
+  }
+  
+  .matcha {
+    font-weight: 600;
+    color: #304da6;
+    font-size: 24px;
+  }
+  
+  .sub-matcha {
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+  
+  .intro-benefits {
+    /* width: 50%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  
+  .intro-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .intro-item div {
+    width: 110px;
+    height: 110px;
+    background-color: #8d3e3e;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .intro-item div img {
+    width: 50%;
+  }
+  
+  .intro-item span {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 5px;
+  }
+  
+  .intro-item__desc {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    text-shadow: 0 0 11px #000;
+  }
+  
+  .order {
+    margin-top: 30px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    gap: 30px 20px;
+  }
+  
+  .order-form {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 30px 20px 40px;
+    min-width: 300px;
+    background-color: #fff;
+    align-items: center;
+  }
+  
+  .order-form__img {
+    display: none;
+  }
+  
+  .order-form__price {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background: #910439;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    line-height: 1;
+  }
+  
+  .old-price {
+    font-size: 22px;
+    color: #cd5c76;
+    text-decoration: line-through;
+  }
+  
+  .new-price {
+    font-weight: 900;
+    font-size: 32px;
+    color: #fff722;
+  }
+  
+  .order-form__input {
+    margin-bottom: 20px;
+  }
+  
+  .order-form p {
+    font-size: 16px;
+  }
+  
+  .order-form__btn {
+    width: 100%;
+    line-height: 24px;
+    margin: 25px 0;
+    background-color: var(--form-blue-color);
+  }
+  
+  .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .product img {
+    width: 73%;
+  }
+  
+  .product__count {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .product__count span {
+    font-weight: 600;
+    font-size: 69px;
+    color: #fff;
+    line-height: 1.2;
+  }
+  
+  .product__count p {
+    font-size: 19px;
+    font-weight: 400;
+    color: #fff;
+  }
+  
+  .discount {
+    background-color: #0000005c;
+    width: 33.3333%;
+    min-width: 420px;
+    padding: 15px 15px 20px;
+    color: #fff;
+  }
+  
+  .discount-title {
+    position: relative;
+    padding-left: 65px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 1.05;
+    margin-bottom: 30px;
+    color: #fff;
+  }
+  
+  .discount-title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 55px;
+    height: 55px;
+    background: url("../images/icons/percent.webp") no-repeat center;
+    background-size: cover;
+  }
+  
+  .discount-title span {
+    font-size: 26px;
+    color: #fff722;
+  }
+  
+  .discount-list__item {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 24px;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  
+  .discount-list__item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .discount-list__item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../images/svg/check-circle.svg");
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .discount-list__text {
+    padding-left: 45px;
+  }
+  
+  @media (min-width: 768px) and (max-width: 1200px) {
+    .email {
+      font-size: 20px;
+    }
+  
+    h1 {
+      margin-top: 20px;
+    }
+  
+    .intro-item div {
+      width: 95px;
+      height: 95px;
+    }
+  
+    .order {
+      margin-top: 40px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .product {
+      width: 56%;
+    }
+  
+    .discount {
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: 320px) and (max-width: 768px) {
+    .sub-matcha,
+    .matcha {
+      display: none;
+    }
+  
+    h1 {
+      margin-top: 0;
+    }
+  
+    .intro__wrapper {
+      padding-bottom: 50px;
+    }
+  
+    .intro__desc {
+      gap: 20px 0;
+    }
+  
+    .intro-item {
+      width: 33.3%;
+    }
+  
+    .intro-item div {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .intro-item span {
+      margin-top: 2px;
+      font-size: 13px;
+    }
+  
+    .intro-item__desc {
+      margin-top: 6px;
+      font-size: 11px;
+      text-shadow: 0 0 8px #000;
+      text-align: center;
+    }
+  
+    .order {
+      margin-top: 40px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .order-form {
+      margin: 0 auto;
+      max-width: 300px;
+    }
+  
+    .order-form__img {
+      margin-bottom: 20px;
+      display: block;
+      max-width: 100%;
+    }
+  
+    .discount {
+      width: 100%;
+      min-width: unset;
+      padding: 10px;
+    }
+  
+    .discount-title {
+      padding-left: 55px;
+      font-size: 23px;
+      margin-bottom: 20px;
+    }
+  
+    .discount-title span {
+      font-size: 23px;
+    }
+  
+    .discount-title::before {
+      width: 45px;
+      height: 45px;
+    }
+  
+    .discount-list__item {
+      font-size: 20px;
+      line-height: 20px;
+      margin-bottom: 20px;
+    }
+  
+    .product {
+      display: none;
+    }
+  }
+  

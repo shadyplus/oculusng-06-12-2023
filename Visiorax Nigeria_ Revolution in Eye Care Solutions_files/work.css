@@ -1,0 +1,18 @@
+.work {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #fff;
+}
+
+.work__wrapper .subtitle {
+  display: contents;
+  color: #ff0000;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+.work__wrapper p {
+  display: inline-block;
+  line-height: 24px;
+}
